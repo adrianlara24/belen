@@ -1,0 +1,55 @@
+<div class="historia">
+    <img src="tree.png" alt="arbol">
+
+    <section>
+        <h2>Un Poquito de Historia</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo et sapiente aspernatur nostrum excepturi dolore
+            voluptatibus cupiditate, eum at odit illo, numquam fugiat repellendus asperiores impedit aliquam? Voluptas
+            hic, sed vitae corrupti minima saepe voluptate mollitia excepturi! Possimus harum beatae fugiat architecto
+            distinctio illum, autem qui odio perspiciatis tenetur placeat rerum libero rem tempora nam incidunt,
+            perferendis assumenda consectetur aspernatur veniam sunt nihil quibusdam! Fugit alias error odio temporibus
+            provident! Dolore fuga doloremque autem obcaecati mollitia? Illum possimus tempora, reiciendis quos
+            consequatur deleniti rerum velit maxime! Debitis, cum laboriosam. Nemo, repudiandae voluptates sunt autem,
+            doloremque perspiciatis delectus fugiat blanditiis quos ut error quod! Ratione dolores tenetur facere totam,
+            at voluptatibus fugiat harum quis, dolor accusantium aut! Ea dolore accusantium architecto fuga. In,
+            perspiciatis? Consectetur, ea sequi corporis mollitia unde iusto in quo a necessitatibus maiores magnam ab
+            totam distinctio quis nostrum voluptate. Porro earum, ratione excepturi eligendi incidunt possimus
+            asperiores! Ab sapiente maxime eveniet vel culpa quidem totam quod corrupti fugiat expedita, reprehenderit,
+            nemo, commodi voluptatem similique facilis deserunt doloremque voluptatibus ullam voluptate magni?
+            Voluptatibus, perspiciatis iusto. Quod, odio labore rerum aliquam sint perspiciatis nam ad sed harum
+            asperiores corrupti, assumenda alias eaque tenetur commodi culpa officia, dignissimos fugit? Assumenda?</p>
+    </section>
+
+</div>
+
+
+<style lang="scss">
+    .historia {
+        @apply m-2 p-14 shadow flex gap-6;
+        @apply rounded-lg border-4 relative;
+        min-height: 400px;
+        border-color: #484D40;
+        background-color: #595D51;
+
+        &:after {
+            content: '';
+            @apply border-2 rounded-lg border-dashed top-2 left-2;
+            @apply absolute;
+            width: 98%;
+            height: 96%;
+            border-color: inherit;
+        }
+
+        section {
+            @apply flex-1 flex flex-col items-center h-full;
+
+            h2 {
+                @apply text-4xl font-bold text-white mb-6;
+            }
+
+            p {
+                @apply text-white text-lg font-light;
+            }
+        }
+    }
+</style>

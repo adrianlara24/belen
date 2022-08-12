@@ -1,0 +1,40 @@
+<div class="topbarx">
+
+    <div class="header">
+        <img src="/logo.png" alt="logo">
+    </div>
+
+    <div class="menu">
+        <a href="#">Historia</a>
+        <a href="#">Libros</a>
+        <a href="#">Ropita</a>
+        <a href="#">Merchandising</a>
+        <a href="#">Imagenes</a>
+        <a href="#">Contactame</a>
+    </div>
+
+</div>
+
+<style lang="scss">
+    .topbarx {
+        @apply w-full flex items-center justify-between px-4;
+        flex: 0 0 80px;
+
+        .header {
+            @apply h-full flex items-center gap-3;
+
+            img {
+                @apply w-24;
+            }
+        }
+
+        .menu {
+            @apply flex items-center gap-3;
+
+            a {
+                @apply text-sm font-bold;
+                color: var(--accent);
+            }
+        }
+    }
+</style>

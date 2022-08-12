@@ -1,0 +1,56 @@
+<div class="hero">
+    <img src="nena_left.png" alt="nena">
+    <div class="title">
+        <h1>MI PEQUEÑA BELEN</h1>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto animi id temporibus hic sint
+            repudiandae
+            voluptate. Iste optio accusantium laborum?
+        </p>
+        <button class="yellow">COMPRAR</button>
+    </div>
+    <img src="nena_right.png" alt="nena">
+</div>
+
+
+<style lang="scss">
+    .hero {
+        @apply w-full flex items-center gap-2;
+        min-height: 600px;
+
+        .title {
+            @apply flex flex-col items-center gap-4 flex-1;
+
+            h1 {
+                @apply text-8xl font-bold;
+                color: var(--secondary);
+            }
+
+            p {
+                @apply text-base text-gray-600 font-light;
+            }
+
+
+        }
+    }
+
+    button {
+        @apply bg-gray-200 px-14 py-3 rounded-full border-4 border-gray-500 relative;
+        @apply text-base font-bold uppercase;
+        @apply flex items-center justify-center;
+
+        &:after {
+            content: '';
+            @apply border-2 rounded-full border-dashed;
+            @apply absolute;
+            width: 98%;
+            height: 90%;
+            border-color: inherit;
+        }
+
+        &.yellow {
+            background-color: #EDE350;
+            border-color: #87801F;
+        }
+    }
+</style>
